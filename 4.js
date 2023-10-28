@@ -18,4 +18,27 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const firstNum = +prompt("Введите первое число: ");
+const secondNum = +prompt("Введите второе число: ");
+
+const sum = (num1, num2) => {
+    return num1 + num2;
+};
+const sub = (num1, num2) => {
+    if (num1 > num2) {
+        return num1 - num2;
+    } else if (num2 > num1) {
+        return num2 - num1;
+    }
+        else {
+            return 0;
+        }
+};
+const mult = (num1, num2) => {
+    return num1 * num2;
+};
+const div = (num1, num2) => {
+    return num1 / num2;
+};
+console.log(sum(firstNum, secondNum), sub(firstNum, secondNum), mult(firstNum, secondNum),
+ div(firstNum, secondNum));
