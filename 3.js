@@ -10,4 +10,19 @@
 три числа. Проверять их не нужно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+const firstNumber = +prompt("Введите первое число: ");
+const secondNumber = +prompt("Введите второе число: ");
+const thirdNumber = +prompt("Введите третье число: ");
+
+function maxNumber(first, second, third) {
+    let max = first;
+    if (second > max) {
+        max = second
+    };
+    if (third > max) {
+        max = third
+    };
+    return max;
+};
+console.log(`Максимальное значение среди чисел ${firstNumber}, ${secondNumber},
+ ${thirdNumber} равно ${maxNumber(firstNumber, secondNumber, thirdNumber)}`);
